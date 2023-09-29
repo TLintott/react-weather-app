@@ -16,7 +16,7 @@ export default function Weather() {
   return (
     <div className="app">
       <div id="weather-app" class="weather-app">
-        <div className="row">
+        <div className="row row-search">
           <form className="search-form" id="search-form">
             <div className="row">
               <div className="col-9">
@@ -26,13 +26,7 @@ export default function Weather() {
                   placeholder="Enter a city.."
                   className="form-control search-input input-text"
                 />
-              </div>
-              <div className="col-3 p-0">
-                <input
-                  type="submit"
-                  className="btn btn-primary w-100 search-btn"
-                  value="Search"
-                />
+                <input type="submit" className="search-btn" value="Search" />
               </div>
             </div>
           </form>
@@ -47,7 +41,7 @@ export default function Weather() {
             <li>{weatherData.description}</li>
           </ul>
         </div>
-        <div className="row">
+        <div className="row row-weather">
           <div className="col-6">
             <div className="clearfix weather-temperature">
               <img
@@ -56,10 +50,10 @@ export default function Weather() {
                 id="icon"
                 className="float-left"
               />
-              <strong id="temperature"> </strong>
+              <strong id="temperature">{weatherData.temperature}</strong>
               <span className="units">
                 <a href={weatherData.imgUrl} className="active">
-                  {weatherData.temperature} °C
+                   °C
                 </a>
               </span>
             </div>
@@ -77,6 +71,8 @@ export default function Weather() {
           </div>
         </div>
       </div>
+      <div className="footer">This Project was created by Tracey Lintott and is Open-sourced on <a href="https://github.com/TLintott/react-weather-app">Github</a> </div>
     </div>
   );
 }
+

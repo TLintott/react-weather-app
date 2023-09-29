@@ -7,9 +7,10 @@
     padding: 40px;
 }
 
+
 .search-form {
+    align-items:right;
     border-bottom: 1px solid #f9f7fe;
-    margin-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -23,6 +24,7 @@
     height: 50px;
     line-height: 20px;
     padding: 15px 20px;
+    width: 8cqi;
 }
 
 .search-btn {
@@ -32,7 +34,11 @@
     font-size: 16px;
     font-weight: 700;
     height: 50px;
-    padding: 15px 0;
+    padding: 15px 15px;
+    border-radius: 6px;
+    margin-left: 10px;
+    
+   
 }
 
 .weather-temperature strong {
@@ -52,7 +58,6 @@
 
 .weather-temperature img {
     margin-right: 5px;
-    margin-bottom: 32px;
     height: 64px;
     width: 64px;
 }
@@ -99,3 +104,19 @@
 img {
     width: 70px;
 }
+
+.row-weather{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.footer{
+margin-top: 10px;
+text-align: center;
+font-size: 14px;
+color: rgb(135, 135, 135);
+font-family: "Bricolage Grotesque", sans-serif;
+  
+}
+
